@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">LinearLayout</string>
     <string name="button1_name">constraint_layout</string>
-    <string name="button2_name">button 2</string>
+    <string name="button2_name">login</string>
     <string name="button3_name">button 3</string>
     <string name="button4_name">button 4</string>
     <string name="button5_name">button 5</string>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">线性布局</string>
     <string name="button1_name">constraint_layout</string>
-    <string name="button2_name">按钮 2</string>
+    <string name="button2_name">登陆</string>
     <string name="button3_name">按钮 3</string>
     <string name="button4_name">按钮 4</string>
     <string name="button5_name">按钮 5</string>
