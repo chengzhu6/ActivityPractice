@@ -14,16 +14,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="88dp"
         android:contentDescription="@string/aware" />
     
     <EditText
         android:id="@+id/usernameET"
         android:layout_width="250dp"
         android:layout_height="40dp"
+        android:background="@drawable/ic_edit_text_background"
+        android:textColor="#e4e4e4"
+        android:textStyle="normal"
+        android:textSize="12sp"
         android:hint="@string/username_placeholder"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logoIV"
+        android:layout_marginTop="77.7dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:importantForAutofill="no"
         android:inputType="text" />
 
@@ -33,31 +41,46 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:hint="@string/password_placeholder"
+        android:background="@drawable/ic_edit_text_background"
+        android:textColor="#e4e4e4"
+        android:textStyle="normal"
+        android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/usernameET"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:importantForAutofill="no"
         android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/isRememberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:text="@string/remember_me"
+        app:layout_constraintLeft_toRightOf="@id/isRememberCB"
+        app:layout_constraintTop_toBottomOf="@id/pwdET"
+        android:layout_marginTop="22.5dp" />
 
     <CheckBox
         android:id="@+id/isRememberCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@id/pwdET"
-        app:layout_constraintTop_toBottomOf="@id/pwdET"/>
+        app:layout_constraintBaseline_toBaselineOf="@id/isRememberTV"
+        app:layout_constraintTop_toBottomOf="@id/pwdET" />
 
-    <TextView
-        android:id="@+id/isRememberTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/remember_me"
-        app:layout_constraintLeft_toRightOf="@id/isRememberCB"
-        app:layout_constraintBaseline_toBaselineOf="@id/isRememberCB"/>
-    
     <TextView
         android:id="@+id/forgotPwdTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="normal"
         android:text="@string/forgot_password"
         app:layout_constraintRight_toRightOf="@id/pwdET"
         app:layout_constraintBaseline_toBaselineOf="@id/isRememberCB"/>
@@ -68,44 +91,58 @@
         android:layout_height="40dp"
         android:text="@string/login"
         android:textAllCaps="false"
+        android:background="@drawable/ic_login_btn_background"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/isRememberTV"/>
+        app:layout_constraintTop_toBottomOf="@id/isRememberTV"
+        android:layout_marginTop="22.5dp"/>
 
     <TextView
         android:id="@+id/otherTypeLoginTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/or_connect_with"
+        android:textColor="#b2b2b2"
+        android:textSize="12sp"
+        android:textStyle="normal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginBtn"/>
+        app:layout_constraintTop_toBottomOf="@id/loginBtn"
+        android:layout_marginTop="26.5dp"/>
 
     <ImageView
         android:id="@+id/facebookIV"
         android:src="@drawable/fb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
         app:layout_constraintTop_toBottomOf="@id/otherTypeLoginTV"
         app:layout_constraintLeft_toLeftOf="@id/loginBtn"
-        android:contentDescription="@string/facebook" />
+        android:contentDescription="@string/facebook"
+        android:layout_marginTop="29.5dp"/>
 
     <ImageView
         android:id="@+id/twitterIV"
         android:src="@drawable/tw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
         app:layout_constraintTop_toBottomOf="@id/otherTypeLoginTV"
         app:layout_constraintRight_toRightOf="@id/loginBtn"
-        android:contentDescription="@string/twitter" />
+        android:contentDescription="@string/twitter"
+        android:layout_marginTop="29.5dp"/>
     
     <Button
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:text="@string/sign_up_with_e_mail"
         android:textAllCaps="false"
+        android:background="@drawable/ic_signup_btn_background"
+        android:textColor="#1f4ba5"
+        android:textSize="12sp"
+        android:textStyle="normal"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/twitterIV"/>
+        app:layout_constraintTop_toBottomOf="@id/twitterIV"
+        android:layout_marginTop="85.5dp"
+        android:layout_marginBottom="44.5dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
