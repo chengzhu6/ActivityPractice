@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">LinearLayout</string>
     <string name="button1_name">constraint_layout</string>
-    <string name="button2_name">login</string>
+    <string name="button2_name">Login</string>
     <string name="button3_name">button 3</string>
     <string name="button4_name">button 4</string>
     <string name="button5_name">button 5</string>
@@ -15,4 +15,13 @@
     <string name="center_img">center img</string>
     <string name="singup">Singup</string>
     <string name="login">Login</string>
+    <string name="aware">aware</string>
+    <string name="username_placeholder">Username</string>
+    <string name="password_placeholder">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_connect_with">or connect with</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="sign_up_with_e_mail">Sign Up with E-mail</string>
 </resources>

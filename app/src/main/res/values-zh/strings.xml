@@ -16,4 +16,13 @@
     <string name="center_img">居中图片</string>
     <string name="singup">注册</string>
     <string name="login">登陆</string>
+    <string name="aware">aware</string>
+    <string name="username_placeholder">Username</string>
+    <string name="password_placeholder">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_connect_with">or connect with</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="sign_up_with_e_mail">Sign Up with E-mail</string>
 </resources>
