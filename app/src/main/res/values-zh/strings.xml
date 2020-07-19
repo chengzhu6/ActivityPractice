@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">线性布局</string>
-    <string name="button1_name">按钮 1</string>
+    <string name="button1_name">constraint_layout</string>
     <string name="button2_name">按钮 2</string>
     <string name="button3_name">按钮 3</string>
     <string name="button4_name">按钮 4</string>
@@ -12,4 +12,8 @@
     <string name="button9_name">按钮 9</string>
     <string name="button10_name">按钮 10</string>
     <string name="title">Android 练习</string>
+    <string name="hello">你好！</string>
+    <string name="center_img">居中图片</string>
+    <string name="singup">注册</string>
+    <string name="login">登陆</string>
 </resources>

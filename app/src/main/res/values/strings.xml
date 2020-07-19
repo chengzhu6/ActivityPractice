@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">LinearLayout</string>
-    <string name="button1_name">button 1</string>
+    <string name="button1_name">constraint_layout</string>
     <string name="button2_name">button 2</string>
     <string name="button3_name">button 3</string>
     <string name="button4_name">button 4</string>
@@ -11,4 +11,8 @@
     <string name="button9_name">button 9</string>
     <string name="button10_name">button 10</string>
     <string name="title">Android Practice</string>
+    <string name="hello">Hello!</string>
+    <string name="center_img">center img</string>
+    <string name="singup">Singup</string>
+    <string name="login">Login</string>
 </resources>
