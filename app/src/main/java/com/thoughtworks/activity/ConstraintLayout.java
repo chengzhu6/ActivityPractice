@@ -1,14 +1,14 @@
-package com.thoughtworks.linearlayout;
+package com.thoughtworks.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class LoginActivity extends AppCompatActivity {
+public class ConstraintLayout extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_constraint_layout);
     }
 }

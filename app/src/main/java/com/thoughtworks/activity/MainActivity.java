@@ -1,11 +1,10 @@
-package com.thoughtworks.linearlayout;
+package com.thoughtworks.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
                 createLoginActivity(view);
             }
         });
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createSelectContactActivity(view);
+            }
+        });
     }
 
     public void createConstraintLayoutActivity(View view) {
@@ -34,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void createLoginActivity(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void createSelectContactActivity(View view) {
+        Intent intent = new Intent(this, SelectContactActivity.class);
         startActivity(intent);
     }
 }

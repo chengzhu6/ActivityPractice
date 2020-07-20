@@ -1,4 +1,4 @@
-package com.thoughtworks.linearlayout;
+package com.thoughtworks.activity;
 
 import org.junit.Test;
 
