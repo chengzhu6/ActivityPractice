@@ -14,10 +14,13 @@ import android.widget.TextView;
 public class SelectContactActivity extends AppCompatActivity {
     private final static int REQUEST_CONTACT = 1;
 
+    private TextView contactInfoTV;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_contact);
+        contactInfoTV = findViewById(R.id.contact_info);
         findViewById(R.id.select_contact_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,15 +41,21 @@ public class SelectContactActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (data != null) {
-            Uri contactData = data.getData();
-            if (contactData != null) {
-                Cursor cursor = getContentResolver().query(contactData, null, null, null, null);
-                if (cursor != null) {
-                    cursor.moveToFirst();
+        if (requestCode == REQUEST_CONTACT && resultCode == RESULT_OK) {
+            if (data != null) {
+                Uri contactData = data.getData();
+                getContactInfo(contactData);
+            }
+        }
+    }
+
+    private void getContactInfo(Uri contactData) {
+        if (contactData != null) {
+            Cursor cursor = getContentResolver().query(contactData, null, null, null, null);
+            if (cursor != null) {
+                if (cursor.moveToFirst()) {
                     String username = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
                     String phoneNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-                    TextView contactInfoTV = (TextView) findViewById(R.id.contact_info);
                     contactInfoTV.setText(String.format("%s: %s", username, phoneNumber));
                     cursor.close();
                 }
