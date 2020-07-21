@@ -27,6 +27,12 @@ public class SelectContactActivity extends AppCompatActivity {
                 callSystemContact();
             }
         });
+        findViewById(R.id.life_cycle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createLifeCycleActivity(view);
+            }
+        });
     }
 
     public void callSystemContact() {
@@ -61,5 +67,10 @@ public class SelectContactActivity extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    public void createLifeCycleActivity(View view) {
+        Intent intent = new Intent(this, LifeCycleActivity.class);
+        startActivity(intent);
     }
 }
